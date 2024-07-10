@@ -111,7 +111,7 @@ main {
             .product {
                 width: calc(100% / 3 - 20px);
                 margin: 10px;
-
+                //GESTIONE IMMAGINE
                 .immagine {
                     position: relative;
 
@@ -123,7 +123,8 @@ main {
                         position: absolute;
                         top: 0;
                     }
-
+                    //FINE IMMAGINE
+                    //ETICHETTE PRODOTTO
                     .label-product {
                         position: absolute;
                         color: white;
@@ -140,7 +141,8 @@ main {
                             background-color: #008000;
                         }
                     }
-
+                    // FINE ETICHETTE
+                    //WISHLIST
                     .wishlist {
                         position: absolute;
                         z-index: 999;
@@ -157,10 +159,13 @@ main {
                     .wishlist:hover {
                         color: red;
                     }
+                    //FINE WISHLIST
                 }
+                //HOVER IMMAINE
                 .immagine:hover .img-hover {
                     display: block;
                 }
+                //INFORMAZIONI PRODOTTO
                 .information-product {
                     margin-bottom: 20px;
                     .product-type {
