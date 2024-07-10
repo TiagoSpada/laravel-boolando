@@ -1,6 +1,7 @@
 <footer>
 		<div class="container-lg">
 			<div class="row justify-content-between">
+                {{-- INFORMAZIONI --}}
 				<div class="col-4">
                     <div class="content">
                         <h3>Boolando s.r.l</h3>
@@ -11,6 +12,7 @@
                         </ul>
                     </div>
                 </div>
+                {{-- SOCIAL --}}
                 <div class="col-3 ">
                 <div class="content text-end">
                         <h4>Trovaci anche su</h4>

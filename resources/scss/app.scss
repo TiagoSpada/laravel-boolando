@@ -2,6 +2,10 @@
 @use "./partials/_variables" as *;
 @import "~bootstrap/scss/bootstrap";
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 //HEADER
 header {
     background-color: $bg-color-header;
@@ -97,3 +101,89 @@ footer {
     }
 }
 // FINE FOOTER
+
+// PRUDUCTS LIST
+main {
+    section {
+        padding: 50px 0;
+        .row {
+            //CARTA PRODOTTO
+            .product {
+                width: calc(100% / 3 - 20px);
+                margin: 10px;
+
+                .immagine {
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                    }
+                    .img-hover {
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                    }
+
+                    .label-product {
+                        position: absolute;
+                        color: white;
+                        bottom: 45px;
+                        font-size: 14px;
+                        span {
+                            padding: 5px 8px;
+                        }
+                        .discount-label {
+                            background-color: #ff0000;
+                            margin-right: 5px;
+                        }
+                        .tag-label {
+                            background-color: #008000;
+                        }
+                    }
+
+                    .wishlist {
+                        position: absolute;
+                        z-index: 999;
+                        top: 1%;
+                        right: 0;
+                        background-color: white;
+                        font-size: 30px;
+                        width: 50px;
+                        height: 50px;
+                        text-align: center;
+                        align-content: center;
+                        cursor: pointer;
+                    }
+                    .wishlist:hover {
+                        color: red;
+                    }
+                }
+                .immagine:hover .img-hover {
+                    display: block;
+                }
+                .information-product {
+                    margin-bottom: 20px;
+                    .product-type {
+                        font-size: 16px;
+                        font-weight: 560;
+                    }
+
+                    .price {
+                        font-size: 13px;
+                        color: red;
+                        font-weight: 800;
+                    }
+
+                    .discount {
+                        color: black;
+                        font-weight: normal;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+            //FINE CARTA PRODOTTO
+        }
+    }
+}
+
+// FINE PRUDUCTS
