@@ -1,10 +1,99 @@
+@use "./partials/_reset" as *;
+@use "./partials/_variables" as *;
 @import "~bootstrap/scss/bootstrap";
 
-body {
-    text-align: center;
-}
+//HEADER
+header {
+    background-color: $bg-color-header;
+    padding: 20px 0;
+    .row {
+        justify-content: space-between;
+        div {
+            a {
+                color: #ffff;
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+            }
+            ul {
+                padding: 0;
+            }
+            .gender {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: auto 0;
+                    gap: 30px;
+                }
+            }
 
-img {
-    width: 500px;
-    border-radius: 20px;
+            .logo {
+                text-align: center;
+                margin: auto 0;
+                img {
+                    width: 130px;
+                }
+            }
+
+            .icon {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row-reverse;
+                    margin: auto 0;
+                }
+
+                li {
+                    margin: 0 14px;
+                }
+
+                a {
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+    }
 }
+//FINE HEADER
+
+//FOOTER
+footer {
+    background-color: $bg-color-footer;
+    padding: 20px 0;
+    color: #ffff;
+    .row {
+        // justify-content: space-between;
+        .content {
+            margin: auto 0;
+            h3 {
+                font-size: 18px;
+                margin-bottom: 16px;
+            }
+
+            .information {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                font-size: 12px;
+            }
+
+            h4 {
+                font-size: 16px;
+                margin-bottom: 5px;
+                margin-bottom: 16px;
+            }
+            .icon-social {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                li {
+                    i {
+                        font-size: 22px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+// FINE FOOTER
